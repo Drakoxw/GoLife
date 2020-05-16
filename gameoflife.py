@@ -5,8 +5,8 @@ import time
 pygame.init()
 
 #se crea las dimensiones de a pantalla 
-height = 1000
-width=1000
+height = 700
+width=700
 screen = pygame.display.set_mode((height,width))
 
 #se pinta el fondo 
@@ -14,8 +14,8 @@ bg = 25,25,25
 screen.fill(bg)
 
 
-nxC = 45# número de celdas
-nyC = 45
+nxC = 55# número de celdas
+nyC = 55
 dimCW = width / nxC#se le da la dimensión
 dimCh = height / nyC
 
@@ -47,7 +47,7 @@ while True:#recorer los dos ejes
     screen.fill(bg)#pintandola como al principio
 
     #diley
-    time.sleep(0.1)
+    time.sleep(0.035)
 
     #registra eventos de raton y teclado
     ev = pygame.event.get()
